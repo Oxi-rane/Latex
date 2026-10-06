@@ -1,0 +1,122 @@
+```latex
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{makeidx}
+
+\makeindex
+
+\title{Machine Learning Report}
+\author{Harshit Maurya}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+% Table of Contents
+\tableofcontents
+
+% List of Figures
+\listoffigures
+
+% List of Tables
+\listoftables
+
+\newpage
+
+\section{Introduction}
+
+Machine Learning\index{Machine Learning} is a field of
+Artificial Intelligence\index{Artificial Intelligence}.
+
+\subsection{Background}
+
+Neural Networks\index{Neural Networks} are commonly used
+in Machine Learning.
+
+\section{Methodology}
+
+We use a Random Forest\index{Random Forest} classifier
+for our experiment.
+
+\subsection{Dataset}
+
+The dataset contains information about students.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+Student & Score \\
+\hline
+A & 85 \\
+B & 92 \\
+C & 78 \\
+\hline
+\end{tabular}
+\caption{Student Scores}
+\end{table}
+
+\section{Results}
+
+The results are shown in the following figure.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{example-image}
+\caption{Machine Learning Model}
+\end{figure}
+
+\section{Conclusion}
+
+Machine Learning can be used to predict student performance.
+
+\newpage
+
+% Print the Index
+\printindex
+
+\end{document}
+```
+
+### The important commands
+
+```latex
+\tableofcontents
+```
+
+→ creates the **Table of Contents**
+
+```latex
+\listoffigures
+```
+
+→ creates the **List of Figures**
+
+```latex
+\listoftables
+```
+
+→ creates the **List of Tables**
+
+```latex
+\index{Machine Learning}
+```
+
+→ adds **Machine Learning** to the index
+
+```latex
+\printindex
+```
+
+→ prints the index
+
+And these two are required for the index:
+
+```latex
+\usepackage{makeidx}
+\makeindex
+```
+
+The `\caption{...}` commands are what make figures/tables appear in their respective lists.

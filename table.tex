@@ -1,0 +1,66 @@
+\documentclass{article}
+
+\usepackage{multirow}
+\usepackage{tabularx}
+
+\begin{document}
+
+\section*{Student Information}
+
+% Basic table with caption
+\begin{table}[h]
+\centering
+\caption{Student Information}
+
+\begin{tabular}{|c|c|c|}
+\hline
+Name & Age & Grade \\
+\hline
+Harshit & 21 & A \\
+\hline
+Rahul & 22 & B \\
+\hline
+\end{tabular}
+
+\end{table}
+
+
+% Table with multirow and multicolumn
+\begin{table}[h]
+\centering
+\caption{Merged Cells}
+
+\begin{tabular}{|c|c|c|}
+\hline
+\multirow{2}{*}{Name} & \multirow{2}{*}{Age} & \multirow{2}{*}{Grade} \\
+& & \\
+\hline
+Harshit & 21 & A \\
+\hline
+Rahul & 22 & B \\
+\hline
+\multicolumn{2}{c}{Student Details} & Total \\
+\hline
+\end{tabular}
+
+\end{table}
+
+
+% Auto-fit table
+\begin{table}[h]
+\centering
+\caption{Auto-Fit Column}
+
+\begin{tabularx}{\textwidth}{|c|X|c|}
+\hline
+Name & Description & Grade \\
+\hline
+Harshit & This is a long description that automatically adjusts and wraps within the available column width. & A \\
+\hline
+Rahul & Another description that demonstrates the flexible column. & B \\
+\hline
+\end{tabularx}
+
+\end{table}
+
+\end{document}

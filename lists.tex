@@ -1,0 +1,111 @@
+```latex
+\documentclass{article}
+
+\usepackage{enumitem}
+
+\begin{document}
+
+\section*{Lists in LaTeX}
+
+% 1. Bulleted List
+\subsection*{Bulleted List}
+
+\begin{itemize}
+    \item C++
+    \item Python
+    \item Java
+    \item JavaScript
+\end{itemize}
+
+
+% 2. Numbered List
+\subsection*{Numbered List}
+
+\begin{enumerate}
+    \item Learn programming
+    \item Learn data structures
+    \item Build projects
+    \item Build projects
+\end{enumerate}
+
+
+% 3. Definition List
+\subsection*{Definition List}
+
+\begin{description}
+    \item[Compiler] Translates source code into machine code.
+    \item[Algorithm] A step-by-step procedure for solving a problem.
+    \item[Database] A structured collection of data.
+\end{description}
+
+
+% 4. Compact Bullet List
+\subsection*{Compact Bullet List}
+
+\begin{itemize}[noitemsep]
+    \item C++
+    \item Python
+    \item Java
+\end{itemize}
+
+
+% 5. Customized Spacing
+\subsection*{Spacing Adjustment}
+
+\begin{itemize}[itemsep=10pt]
+    \item First item
+    \item Second item
+    \item Third item
+\end{itemize}
+
+
+% 6. Customized Numbered List
+\subsection*{Customized Numbering}
+
+\begin{enumerate}[label=\Roman*.]
+    \item First step
+    \item Second step
+    \item Third step
+\end{enumerate}
+
+
+% 7. Interrupting and Resuming
+\subsection*{Interrupting and Resuming}
+
+\begin{enumerate}
+    \item First step
+    \item Second step
+\end{enumerate}
+
+Some text between the lists.
+
+\begin{enumerate}[resume]
+    \item Third step
+    \item Fourth step
+    \item Fifth step
+\end{enumerate}
+
+
+% 8. Numbered Definition-Style List
+\subsection*{Numbered Definitions}
+
+\begin{enumerate}
+    \item \textbf{Compiler}: Translates source code into machine code.
+    \item \textbf{Algorithm}: A step-by-step procedure for solving a problem.
+    \item \textbf{Database}: A structured collection of data.
+\end{enumerate}
+
+
+% 9. Bulleted Definition-Style List
+\subsection*{Bulleted Definitions}
+
+\begin{itemize}
+    \item \textbf{Compiler}: Translates source code into machine code.
+    \item \textbf{Algorithm}: A step-by-step procedure for solving a problem.
+    \item \textbf{Database}: A structured collection of data.
+\end{itemize}
+
+\end{document}
+```
+
+One correction: I duplicated **“Build projects”** in the numbered list above; change the fourth one to **“Apply for jobs”** if you want the sensible version.
